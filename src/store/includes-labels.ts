@@ -129,8 +129,12 @@ export async function getPrice(
     const price = Number.parseFloat(
       priceString.replace(priceSeparator, '').match(/\d+/g)!.join('.')
     );
-
+    var jp_price = query.jpFormat 
     logger.debug('received price', price);
+    if (jp_price) {
+      const jp_price = Math.ceil(price * 0.009532)
+      return jp_price
+    }
     return price;
   }
 
