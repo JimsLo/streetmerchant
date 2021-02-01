@@ -3,6 +3,7 @@
   "description": "The world's easiest, most powerful stock checker",
   "main": "src/index.ts",
   "scripts": {
+	"tsc": "tsc",
     "fix": "gts fix",
     "lint": "gts lint",
     "clean": "gts clean",
@@ -15,7 +16,8 @@
     "test": "c8 mocha 'build/test/**/test-*.js' --exclude 'build/test/functional/**/test-*.js'",
     "test:notification": "npm run compile && node build/test/functional/test-notification.js",
     "test:notification:production": "node build/test/functional/test-notification.js",
-	"heroku-prebuild": "npm install"
+	"heroku-prebuild": "npm install",
+	"postinstall": "npm run tsc"
   },
   "engines": {
     "node": ">=12.0.0 <15.0.0"
