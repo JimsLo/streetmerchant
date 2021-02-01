@@ -4,7 +4,7 @@
   "main": "src/index.ts",
   "scripts": {
     "fix": "gts fix",
-	"build": "tsc"
+	"tsc": "tsc"
     "lint": "gts lint",
     "clean": "gts clean",
     "compile": "tsc",
@@ -17,7 +17,7 @@
     "test:notification": "npm run compile && node build/test/functional/test-notification.js",
     "test:notification:production": "node build/test/functional/test-notification.js",
 	"heroku-prebuild": "npm install",
-	"postinstall": "npm run build"
+	"postinstall": "npm run tsc"
   },
   "engines": {
     "node": ">=12.0.0 <15.0.0"
