@@ -3,7 +3,7 @@ import {StatusCodeRangeArray, Store} from './store/model';
 import {config} from './config';
 import {disableBlockerInPage} from './adblocker';
 import {logger} from './logger';
-import topUserAgents from 'top-user-agents';
+import * as randomUseragent from 'random-useragent';
 
 export function getSleepTime(store: Store) {
   const minSleep = store.minPageSleep as number;
@@ -95,8 +95,7 @@ export async function getRandomUserAgent(): Promise<string> {
     ];
   }
 
-  const userAgent =
-    topUserAgents[Math.floor(Math.random() * topUserAgents.length)];
+  const userAgent = randomUseragent.getRandom() || '';
   logger.debug('user agent', {userAgent});
   return userAgent;
 }
