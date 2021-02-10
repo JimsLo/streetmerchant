@@ -26,20 +26,10 @@ export const Amazon: Store = {
         container: '#buy-now-button',
         text: ['buy now'],
       },
-      {
-        container: '#desktop_buybox',
-        text: ['add to cart']
-        },
-      ],
-    maxPrice: {
-      container: 'span[class*="PriceString"]',
-    },
-    outOfStock: [
-      {
-        container: '#availability',
-        text: ['out of stock', 'unavailable'],
-      }
     ],
+    maxPrice: {
+      container: '#priceblock_ourprice',
+    },
   },
   links: [
     {
