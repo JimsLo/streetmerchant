@@ -26,6 +26,10 @@ export const Amazon: Store = {
         container: '#buy-now-button',
         text: ['buy now'],
       },
+      {
+        container: '#desktop_buybox',
+        text: ['add to cart'],
+      }
     ],
     maxPrice: {
       container: '#priceblock_ourprice',
