@@ -27,17 +27,17 @@ export const Amazon: Store = {
         text: ['buy now'],
       },
       {
-        container: '#desktop_buybox',
-        text: ['add to cart'],
-      },
+        container: 'div[class*="olpOffer"]',
+        text: ['add to cart']
+        },
       {
         container: 'div[class*="olpBuyColumn"]',
         text: ['add to cart']
       }
     ],
     maxPrice: {
-      container: 'span[class*="OfferPrice"]'
-    },
+      container: 'span[class*="OfferPrice"], span[class*="PriceString"], span[class*="a-price-whole"]'
+      },
   },
   links: [
     {
@@ -439,22 +439,6 @@ export const Amazon: Store = {
       model: 'ventus 3x oc',
       series: '3080',
       url: 'https://www.amazon.com/gp/offer-listing/B08HR5SXPS',
-    },
-    {
-      brand: 'zotac',
-      cartUrl:
-        'https://www.amazon.com/gp/aws/cart/add.html?ASIN.1=B08HJNKT3P&Quantity.1=1',
-      model: 'trinity',
-      series: '3080',
-      url: 'https://www.amazon.com/gp/offer-listing/B08HJNKT3P',
-    },
-    {
-      brand: 'zotac',
-      cartUrl:
-        'https://www.amazon.com/gp/aws/cart/add.html?ASIN.1=B08HVV2P4Z&Quantity.1=1',
-      model: 'trinity oc',
-      series: '3080',
-      url: 'https://www.amazon.com/gp/offer-listing/B08HVV2P4Z',
     },
     {
       brand: 'zotac',

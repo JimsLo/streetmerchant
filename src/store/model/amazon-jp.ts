@@ -13,20 +13,24 @@ export const AmazonJp: Store = {
       text: ['in stock'],
     },
     {
-      container: '#desktop_buybox',
+      container: '#add-to-cart-button',
+      text: ['add to cart'],
+    },
+    {
+      container: '#buy-now-button',
+      text: ['buy now'],
+    },
+    {
+      container: 'div[class*="olpOffer"]',
       text: ['add to cart']
       },
     {
-        container: '#add-to-cart-button',
-        text: ['add to cart'],
-      },
-      {
-        container: '#buy-now-button',
-        text: ['buy now'],
-      },
+      container: 'div[class*="olpBuyColumn"]',
+      text: ['add to cart']
+    }
     ],
     maxPrice: {
-      container: 'span[class*="PriceString"]',
+      container: 'span[class*="OfferPrice"], span[class*="PriceString"], span[class*="a-price-whole"]',
       jpFormat: true
     },
     outOfStock: [
@@ -43,7 +47,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B0753R2TWC&Quantity.1=1',
       model: 'test:model',
       series: 'test:series',
-      url: 'https://www.amazon.co.jp/dp/B0753R2TWC/',
+      url: 'https://www.amazon.jp/gp/offer-listing/B0753R2TWC/',
     },
     {
       brand: 'asus',
@@ -51,7 +55,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08P2HBBLX&Quantity.1=1',
       model: 'dual',
       series: '3060ti',
-      url: 'https://www.amazon.co.jp/dp/B08P2HBBLX',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08P2HBBLX',
     },
     {
       brand: 'gigabyte',
@@ -59,7 +63,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08NYP7KG6&Quantity.1=1',
       model: 'gaming oc',
       series: '3060ti',
-      url: 'https://www.amazon.co.jp/dp/B08NYP7KG6',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08NYP7KG6',
     },
     {
       brand: 'gigabyte',
@@ -67,7 +71,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08NYPLXPJ&Quantity.1=1',
       model: 'gaming oc pro',
       series: '3060ti',
-      url: 'https://www.amazon.co.jp/dp/B08NYPLXPJ',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08NYPLXPJ',
     },
     {
       brand: 'gigabyte',
@@ -75,7 +79,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08NYNJ6RC&Quantity.1=1',
       model: 'eagle',
       series: '3060ti',
-      url: 'https://www.amazon.co.jp/dp/B08NYNJ6RC',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08NYNJ6RC',
     },
     {
       brand: 'asus',
@@ -83,7 +87,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B083Z5P6TX&Quantity.1=1',
       model: 'tuf',
       series: '3060ti',
-      url: 'https://www.amazon.co.jp/dp/B083Z5P6TX',
+      url: 'https://www.amazon.jp/gp/offer-listing/B083Z5P6TX',
     },
     {
       brand: 'msi',
@@ -91,7 +95,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08P2D3JSG&Quantity.1=1',
       model: 'gaming x trio',
       series: '3060ti',
-      url: 'https://www.amazon.co.jp/dp/B08P2D3JSG',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08P2D3JSG',
     },
     {
       brand: 'msi',
@@ -99,7 +103,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08P2DQ28S&Quantity.1=1',
       model: 'ventus 2x',
       series: '3060ti',
-      url: 'https://www.amazon.co.jp/dp/B08P2DQ28S',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08P2DQ28S',
     },
     {
       brand: 'zotac',
@@ -107,7 +111,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08P3XJLJJ&Quantity.1=1',
       model: 'twin edge oc',
       series: '3060ti',
-      url: 'https://www.amazon.co.jp/dp/B08P3XJLJJ',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08P3XJLJJ',
     },
     {
       brand: 'zotac',
@@ -115,7 +119,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08P3V572B&Quantity.1=1',
       model: 'twin edge',
       series: '3060ti',
-      url: 'https://www.amazon.co.jp/dp/B08P3V572B',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08P3V572B',
     },
     {
       brand: 'asus',
@@ -123,7 +127,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08P2D1JZZ&Quantity.1=1',
       model: 'ko',
       series: '3060ti',
-      url: 'https://www.amazon.co.jp/dp/B08P2D1JZZ',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08P2D1JZZ',
     },
     {
       brand: 'asus',
@@ -131,7 +135,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B083Z7TR8Z&Quantity.1=1',
       model: 'strix',
       series: '3060ti',
-      url: 'https://www.amazon.co.jp/dp/B083Z7TR8Z',
+      url: 'https://www.amazon.jp/gp/offer-listing/B083Z7TR8Z',
     },
     {
       brand: 'evga',
@@ -139,7 +143,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08P2H5LW2&Quantity.1=1',
       model: 'ftw3',
       series: '3060ti',
-      url: 'https://www.amazon.co.jp/dp/B08P2H5LW2',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08P2H5LW2',
     },
     {
       brand: 'gigabyte',
@@ -147,7 +151,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08NYPKW1Z&Quantity.1=1',
       model: 'eagle oc',
       series: '3060ti',
-      url: 'https://www.amazon.co.jp/dp/B08NYPKW1Z',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08NYPKW1Z',
     },
     {
       brand: 'asus',
@@ -155,7 +159,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08L8LG4M3&Quantity.1=1',
       model: 'dual',
       series: '3070',
-      url: 'https://www.amazon.co.jp/dp/B08L8LG4M3',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08L8LG4M3',
     },
     {
       brand: 'asus',
@@ -163,7 +167,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08L8HPKR6&Quantity.1=1',
       model: 'dual',
       series: '3070',
-      url: 'https://www.amazon.co.jp/dp/B08L8HPKR6',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08L8HPKR6',
     },
     {
       brand: 'evga',
@@ -171,7 +175,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08LW46GH2&Quantity.1=1',
       model: 'xc3 black',
       series: '3070',
-      url: 'https://www.amazon.co.jp/dp/B08LW46GH2',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08LW46GH2',
     },
     {
       brand: 'asus',
@@ -179,7 +183,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08L8JNTXQ&Quantity.1=1',
       model: 'strix',
       series: '3070',
-      url: 'https://www.amazon.co.jp/dp/B08L8JNTXQ',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08L8JNTXQ',
     },
     {
       brand: 'asus',
@@ -187,7 +191,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08L8KC1J7&Quantity.1=1',
       model: 'tuf',
       series: '3070',
-      url: 'https://www.amazon.co.jp/dp/B08L8KC1J7',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08L8KC1J7',
     },
     {
       brand: 'gigabyte',
@@ -195,7 +199,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08KY266MG&Quantity.1=1',
       model: 'gaming oc',
       series: '3070',
-      url: 'https://www.amazon.co.jp/dp/B08KY266MG',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08KY266MG',
     },
     {
       brand: 'msi',
@@ -203,7 +207,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08KWN2LZG&Quantity.1=1',
       model: 'gaming',
       series: '3070',
-      url: 'https://www.amazon.co.jp/dp/B08KWN2LZG',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08KWN2LZG',
     },
     {
       brand: 'pny',
@@ -211,7 +215,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08HBJB7YD&Quantity.1=1',
       model: 'xlr8 revel',
       series: '3070',
-      url: 'https://www.amazon.co.jp/dp/B08HBJB7YD',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08HBJB7YD',
     },
     {
       brand: 'pny',
@@ -219,7 +223,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08HBF5L3K&Quantity.1=1',
       model: 'xlr8 uprising',
       series: '3070',
-      url: 'https://www.amazon.co.jp/dp/B08HBF5L3K',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08HBF5L3K',
     },
     {
       brand: 'msi',
@@ -227,7 +231,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08KWPDXJZ&Quantity.1=1',
       model: 'ventus 2x oc',
       series: '3070',
-      url: 'https://www.amazon.co.jp/dp/B08KWPDXJZ',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08KWPDXJZ',
     },
     {
       brand: 'msi',
@@ -235,7 +239,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08KWLMZV4&Quantity.1=1',
       model: 'ventus 3x oc',
       series: '3070',
-      url: 'https://www.amazon.co.jp/dp/B08KWLMZV4',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08KWLMZV4',
     },
     {
       brand: 'zotac',
@@ -243,7 +247,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08LF1CWT2&Quantity.1=1',
       model: 'twin edge oc',
       series: '3070',
-      url: 'https://www.amazon.co.jp/dp/B08LF1CWT2',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08LF1CWT2',
     },
     {
       brand: 'zotac',
@@ -251,7 +255,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08LF32LJ6&Quantity.1=1',
       model: 'gaming',
       series: '3070',
-      url: 'https://www.amazon.co.jp/dp/B08LF32LJ6',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08LF32LJ6',
     },
     {
       brand: 'evga',
@@ -259,7 +263,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08L8L71SM&Quantity.1=1',
       model: 'xc3 ultra',
       series: '3070',
-      url: 'https://www.amazon.co.jp/dp/B08L8L71SM',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08L8L71SM',
     },
     {
       brand: 'evga',
@@ -267,7 +271,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08L8L9TCZ&Quantity.1=1',
       model: 'ftw3 ultra',
       series: '3070',
-      url: 'https://www.amazon.co.jp/dp/B08L8L9TCZ',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08L8L9TCZ',
     },
     {
       brand: 'evga',
@@ -275,7 +279,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08LW46GH2&Quantity.1=1',
       model: 'xc3 black',
       series: '3070',
-      url: 'https://www.amazon.co.jp/dp/B08LW46GH2',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08LW46GH2',
     },
     {
       brand: 'gigabyte',
@@ -283,7 +287,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08KY266MG&Quantity.1=1',
       model: 'gaming oc',
       series: '3070',
-      url: 'https://www.amazon.co.jp/dp/B08KY266MG',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08KY266MG',
     },
     {
       brand: 'gigabyte',
@@ -291,7 +295,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08M13DXSZ&Quantity.1=1',
       model: 'vision oc',
       series: '3070',
-      url: 'https://www.amazon.co.jp/dp/B08M13DXSZ',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08M13DXSZ',
     },
     {
       brand: 'gigabyte',
@@ -299,7 +303,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08M4YFNX2&Quantity.1=1',
       model: 'gaming oc',
       series: '3070',
-      url: 'https://www.amazon.co.jp/dp/B08M4YFNX2',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08M4YFNX2',
     },
     {
       brand: 'gigabyte',
@@ -307,7 +311,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08KXZV626&Quantity.1=1',
       model: 'eagle',
       series: '3070',
-      url: 'https://www.amazon.co.jp/dp/B08KXZV626',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08KXZV626',
     },
     {
       brand: 'gigabyte',
@@ -315,7 +319,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08KY322TH&Quantity.1=1',
       model: 'eagle oc',
       series: '3070',
-      url: 'https://www.amazon.co.jp/dp/B08KY322TH',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08KY322TH',
     },
     {
       brand: 'pny',
@@ -323,7 +327,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08HBR7QBM&Quantity.1=1',
       model: 'xlr8 revel',
       series: '3080',
-      url: 'https://www.amazon.co.jp/dp/B08HBR7QBM',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08HBR7QBM',
     },
     {
       brand: 'pny',
@@ -331,7 +335,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08HBTJMLJ&Quantity.1=1',
       model: 'xlr8 revel',
       series: '3080',
-      url: 'https://www.amazon.co.jp/dp/B08HBTJMLJ',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08HBTJMLJ',
     },
     {
       brand: 'msi',
@@ -339,7 +343,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08HR7SV3M&Quantity.1=1',
       model: 'gaming x trio',
       series: '3080',
-      url: 'https://www.amazon.co.jp/dp/B08HR7SV3M',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08HR7SV3M',
     },
     {
       brand: 'evga',
@@ -347,7 +351,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08HR3Y5GQ&Quantity.1=1',
       model: 'ftw3 ultra',
       series: '3080',
-      url: 'https://www.amazon.co.jp/dp/B08HR3Y5GQ',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08HR3Y5GQ',
     },
     {
       brand: 'evga',
@@ -355,7 +359,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08HR55YB5&Quantity.1=1',
       model: 'xc3 ultra',
       series: '3080',
-      url: 'https://www.amazon.co.jp/dp/B08HR55YB5',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08HR55YB5',
     },
     {
       brand: 'evga',
@@ -363,7 +367,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08HR3DPGW&Quantity.1=1',
       model: 'ftw3',
       series: '3080',
-      url: 'https://www.amazon.co.jp/dp/B08HR3DPGW',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08HR3DPGW',
     },
     {
       brand: 'evga',
@@ -371,7 +375,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08HR4RJ3Q&Quantity.1=1',
       model: 'xc3',
       series: '3080',
-      url: 'https://www.amazon.co.jp/dp/B08HR4RJ3Q',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08HR4RJ3Q',
     },
     {
       brand: 'evga',
@@ -379,7 +383,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08HR6FMF3&Quantity.1=1',
       model: 'xc3 black',
       series: '3080',
-      url: 'https://www.amazon.co.jp/dp/B08HR6FMF3',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08HR6FMF3',
     },
     {
       brand: 'gigabyte',
@@ -387,7 +391,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08HJTH61J&Quantity.1=1',
       model: 'gaming oc',
       series: '3080',
-      url: 'https://www.amazon.co.jp/dp/B08HJTH61J',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08HJTH61J',
     },
     {
       brand: 'gigabyte',
@@ -395,7 +399,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08HJS2JLJ&Quantity.1=1',
       model: 'eagle oc',
       series: '3080',
-      url: 'https://www.amazon.co.jp/dp/B08HJS2JLJ',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08HJS2JLJ',
     },
     {
       brand: 'asus',
@@ -403,7 +407,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08HH5WF97&Quantity.1=1',
       model: 'tuf oc',
       series: '3080',
-      url: 'https://www.amazon.co.jp/dp/B08HH5WF97',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08HH5WF97',
     },
     {
       brand: 'asus',
@@ -411,7 +415,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08HHDP9DW&Quantity.1=1',
       model: 'tuf',
       series: '3080',
-      url: 'https://www.amazon.co.jp/dp/B08HHDP9DW',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08HHDP9DW',
     },
     {
       brand: 'asus',
@@ -419,7 +423,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08J6F174Z&Quantity.1=1',
       model: 'strix oc',
       series: '3080',
-      url: 'https://www.amazon.co.jp/dp/B08J6F174Z',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08J6F174Z',
     },
     {
       brand: 'asus',
@@ -427,7 +431,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08J6GMWCQ&Quantity.1=1',
       model: 'strix oc',
       series: '3090',
-      url: 'https://www.amazon.co.jp/dp/B08J6GMWCQ',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08J6GMWCQ',
     },
     {
       brand: 'msi',
@@ -435,7 +439,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08HR5SXPS&Quantity.1=1',
       model: 'ventus 3x oc',
       series: '3080',
-      url: 'https://www.amazon.co.jp/dp/B08HR5SXPS',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08HR5SXPS',
     },
     {
       brand: 'zotac',
@@ -443,7 +447,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08HJNKT3P&Quantity.1=1',
       model: 'trinity',
       series: '3080',
-      url: 'https://www.amazon.co.jp/dp/B08HJNKT3P',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08HJNKT3P',
     },
     {
       brand: 'zotac',
@@ -451,7 +455,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08HVV2P4Z&Quantity.1=1',
       model: 'trinity oc',
       series: '3080',
-      url: 'https://www.amazon.co.jp/dp/B08HVV2P4Z',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08HVV2P4Z',
     },
     {
       brand: 'zotac',
@@ -459,7 +463,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08HJQ182D&Quantity.1=1',
       model: 'trinity',
       series: '3090',
-      url: 'https://www.amazon.co.jp/dp/B08HJQ182D',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08HJQ182D',
     },
     {
       brand: 'pny',
@@ -467,7 +471,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08HBQWBHH&Quantity.1=1',
       model: 'xlr8 revel',
       series: '3090',
-      url: 'https://www.amazon.co.jp/dp/B08HBQWBHH',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08HBQWBHH',
     },
     {
       brand: 'pny',
@@ -475,7 +479,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08HBVX53D&Quantity.1=1',
       model: 'xlr8 revel',
       series: '3090',
-      url: 'https://www.amazon.co.jp/dp/B08HBVX53D',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08HBVX53D',
     },
     {
       brand: 'msi',
@@ -483,7 +487,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08HRBW6VB&Quantity.1=1',
       model: 'gaming x trio',
       series: '3090',
-      url: 'https://www.amazon.co.jp/dp/B08HRBW6VB',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08HRBW6VB',
     },
     {
       brand: 'msi',
@@ -491,7 +495,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08HR9D2JS&Quantity.1=1',
       model: 'ventus 3x',
       series: '3090',
-      url: 'https://www.amazon.co.jp/dp/B08HR9D2JS',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08HR9D2JS',
     },
     {
       brand: 'evga',
@@ -499,7 +503,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08J5F3G18&Quantity.1=1',
       model: 'ftw3 ultra',
       series: '3090',
-      url: 'https://www.amazon.co.jp/dp/B08J5F3G18',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08J5F3G18',
     },
     {
       brand: 'gigabyte',
@@ -507,7 +511,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08HJRF2CN&Quantity.1=1',
       model: 'gaming oc',
       series: '3090',
-      url: 'https://www.amazon.co.jp/dp/B08HJRF2CN',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08HJRF2CN',
     },
     {
       brand: 'gigabyte',
@@ -515,7 +519,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08HJPDJTY&Quantity.1=1',
       model: 'eagle oc',
       series: '3090',
-      url: 'https://www.amazon.co.jp/dp/B08HJPDJTY',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08HJPDJTY',
     },
     {
       brand: 'asus',
@@ -523,7 +527,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08HJGNJ81&Quantity.1=1',
       model: 'tuf oc',
       series: '3090',
-      url: 'https://www.amazon.co.jp/dp/B08HJGNJ81',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08HJGNJ81',
     },
     {
       brand: 'asus',
@@ -531,7 +535,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08HJLLF7G&Quantity.1=1',
       model: 'tuf oc',
       series: '3090',
-      url: 'https://www.amazon.co.jp/dp/B08HJLLF7G',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08HJLLF7G',
     },
     {
       brand: 'amd',
@@ -539,7 +543,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08166SLDF&Quantity.1=1',
       model: '5600x',
       series: 'ryzen5600',
-      url: 'https://www.amazon.co.jp/dp/B08166SLDF',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08166SLDF',
     },
     {
       brand: 'amd',
@@ -547,7 +551,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B0815XFSGK&Quantity.1=1',
       model: '5800x',
       series: 'ryzen5800',
-      url: 'https://www.amazon.co.jp/dp/product/B0815XFSGK',
+      url: 'https://www.amazon.jp/gp/offer-listing/product/B0815XFSGK',
     },
     {
       brand: 'amd',
@@ -555,7 +559,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08164VTWH&Quantity.1=1',
       model: '5900x',
       series: 'ryzen5900',
-      url: 'https://www.amazon.co.jp/dp/B08164VTWH',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08164VTWH',
     },
     {
       brand: 'amd',
@@ -563,7 +567,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B0815Y8J9N&Quantity.1=1',
       model: '5950x',
       series: 'ryzen5950',
-      url: 'https://www.amazon.co.jp/dp/B0815Y8J9N',
+      url: 'https://www.amazon.jp/gp/offer-listing/B0815Y8J9N',
     },
     {
       brand: 'sapphire',
@@ -571,7 +575,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08PHWJC8X&Quantity.1=1',
       model: 'amd reference',
       series: 'rx6900xt',
-      url: 'https://www.amazon.co.jp/dp/B08PHWJC8X',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08PHWJC8X',
     },
     {
       brand: 'xfx',
@@ -579,7 +583,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08PDQJVD9&Quantity.1=1',
       model: 'amd reference',
       series: 'rx6900xt',
-      url: 'https://www.amazon.co.jp/dp/B08PDQJVD9',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08PDQJVD9',
     },
     {
       brand: 'gigabyte',
@@ -587,7 +591,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08NS4W2ZY&Quantity.1=1',
       model: 'amd reference',
       series: 'rx6800xt',
-      url: 'https://www.amazon.co.jp/dp/B08NS4W2ZY',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08NS4W2ZY',
     },
     {
       brand: 'sapphire',
@@ -595,7 +599,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08MVC76SR&Quantity.1=1',
       model: 'amd reference',
       series: 'rx6800xt',
-      url: 'https://www.amazon.co.jp/dp/B08MVC76SR',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08MVC76SR',
     },
     {
       brand: 'sapphire',
@@ -603,7 +607,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08NXXT7WN&Quantity.1=1',
       model: 'nitro+',
       series: 'rx6800xt',
-      url: 'https://www.amazon.co.jp/dp/B08NXXT7WN',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08NXXT7WN',
     },
     {
       brand: 'sapphire',
@@ -611,7 +615,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08NXYNLMR&Quantity.1=1',
       model: 'pulse',
       series: 'rx6800xt',
-      url: 'https://www.amazon.co.jp/dp/B08NXYNLMR',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08NXYNLMR',
     },
     {
       brand: 'sapphire',
@@ -619,7 +623,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08NXVNMPQ&Quantity.1=1',
       model: 'nitro+',
       series: 'rx6800xt',
-      url: 'https://www.amazon.co.jp/dp/B08NXVNMPQ',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08NXVNMPQ',
     },
     {
       brand: 'xfx',
@@ -627,7 +631,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08N6ZLX9B&Quantity.1=1',
       model: 'amd reference',
       series: 'rx6800xt',
-      url: 'https://www.amazon.co.jp/dp/B08N6ZLX9B',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08N6ZLX9B',
     },
     {
       brand: 'xfx',
@@ -635,7 +639,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08NX14LV1&Quantity.1=1',
       model: 'merc',
       series: 'rx6800xt',
-      url: 'https://www.amazon.co.jp/dp/B08NX14LV1',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08NX14LV1',
     },
     {
       brand: 'xfx',
@@ -643,7 +647,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08NN76VJD&Quantity.1=1',
       model: 'amd reference',
       series: 'rx6800',
-      url: 'https://www.amazon.co.jp/dp/B08NN76VJD',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08NN76VJD',
     },
     {
       brand: 'xfx',
@@ -651,7 +655,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08P5YFZCY&Quantity.1=1',
       model: 'merc',
       series: 'rx6800',
-      url: 'https://www.amazon.co.jp/dp/B08P5YFZCY',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08P5YFZCY',
     },
     {
       brand: 'powercolor',
@@ -659,7 +663,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08MNZM5TK&Quantity.1=1',
       model: 'amd reference',
       series: 'rx6800',
-      url: 'https://www.amazon.co.jp/dp/B08MNZM5TK',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08MNZM5TK',
     },
     {
       brand: 'sapphire',
@@ -667,7 +671,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08MVCLBWK&Quantity.1=1',
       model: 'amd reference',
       series: 'rx6800',
-      url: 'https://www.amazon.co.jp/dp/B08MVCLBWK',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08MVCLBWK',
     },
     {
       brand: 'sapphire',
@@ -675,7 +679,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08NXZSPMY&Quantity.1=1',
       model: 'nitro+',
       series: 'rx6800',
-      url: 'https://www.amazon.co.jp/dp/B08NXZSPMY',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08NXZSPMY',
     },
     {
       brand: 'sapphire',
@@ -683,7 +687,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08NXYBVDB&Quantity.1=1',
       model: 'pulse',
       series: 'rx6800',
-      url: 'https://www.amazon.co.jp/dp/B08NXYBVDB',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08NXYBVDB',
     },
     {
       brand: 'asus',
@@ -691,7 +695,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08NWJ29NB&Quantity.1=1',
       model: 'strix oc',
       series: 'rx6800',
-      url: 'https://www.amazon.co.jp/dp/B08NWJ29NB',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08NWJ29NB',
     },
     {
       brand: 'asus',
@@ -699,7 +703,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08P3YT3MY&Quantity.1=1',
       model: 'tuf oc',
       series: 'rx6800',
-      url: 'https://www.amazon.co.jp/dp/B08P3YT3MY',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08P3YT3MY',
     },
     {
       brand: 'asus',
@@ -707,7 +711,7 @@ export const AmazonJp: Store = {
         'https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=B08NWHKGS9&Quantity.1=1',
       model: 'strix lc',
       series: 'rx6800xt',
-      url: 'https://www.amazon.co.jp/dp/B08NWHKGS9',
+      url: 'https://www.amazon.jp/gp/offer-listing/B08NWHKGS9',
     },
   ],
   name: 'amazon-jp',
